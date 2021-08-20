@@ -6,17 +6,33 @@
 
 body {
   display: flex;
-  background: linear-gradient(153deg, #eaecf7 0%, #f5f7fc 55%, #ffffff 100%);
+  background: linear-gradient(153deg, #eaecf7 0%, #f5f7fc 40%, #ffffff 50%);
+  width: 100rem;
+  margin: 0 auto;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
-  width: 30%;
+  font-family: "Calibri", sans-serif;
+  width: 35%;
   height: 100vh;
   padding: 0 3rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.header::after {
+  display: block;
+  content: "";
+  width: 28rem;
+  height: 24rem;
+  background: linear-gradient(172deg, #e9ebf7 30%, #ffffff 100%);
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
 }
 
 .header__overtitle {
@@ -24,12 +40,15 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
+  z-index: 1;
 }
 
 .header__primary-title {
   font-size: 3rem;
   font-weight: 500;
+  width: 30rem;
   color: #1a237e;
+  z-index: 1;
 }
 
 .header__primary-title--marked {
@@ -41,7 +60,9 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.75rem;
+  width: 35rem;
   margin: 1.5rem 0;
+  z-index: 1;
 }
 
 .header__button {
@@ -54,9 +75,59 @@ body {
   height: 2rem;
   cursor: pointer;
   transition-duration: 0.2s;
+  z-index: 1;
 }
 
 .header__button:hover {
   background-color: #e89b00;
   border: solid 0.25rem #e89b00;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Calibri", sans-serif;
+}
+
+.dashboard-col:nth-of-type(2n+1) {
+  margin-top: -2rem;
+}
+
+.dashboard-col:nth-of-type(2n) {
+  margin-top: 2rem;
+}
+
+.dashboard-col__post {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 16rem;
+  background-color: #ffffff;
+  border: solid 0.15rem #e8e8e8;
+  border-radius: 0.25rem;
+  margin: 2rem 1rem;
+  padding-bottom: 2rem;
+}
+
+.dashboard-col__post__img {
+  width: 3rem;
+  height: auto;
+  margin: 2rem 2rem 0.8rem 2rem;
+}
+
+.dashboard-col__post__title {
+  color: #1a237e;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.dashboard-col__post__descritpion {
+  color: #727fc8;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  padding: 0 1.2rem;
 }

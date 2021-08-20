@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Calibri', sans-serif;
+}
+
+.dashboard-col:nth-of-type(2n+1) {
+    margin-top: -2rem;
+}
+
+.dashboard-col:nth-of-type(2n) {
+    margin-top: 2rem;
+}
+
+.dashboard-col__post {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 16rem;
+    background-color: $color-light;
+    border: solid 0.15rem $color-grey;
+    border-radius: 0.25rem;
+    margin: 2rem 1rem;
+    padding-bottom: 2rem;
+}
+
+.dashboard-col__post__img {
+    width: 3rem;
+    height: auto;
+    margin: 2rem 2rem 0.8rem 2rem;
+}
+
+.dashboard-col__post__title {
+    color: $primary-color-font;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.dashboard-col__post__descritpion {
+    color: $secondary-color-font;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    padding: 0 1.2rem;
+}
