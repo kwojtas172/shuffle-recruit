@@ -2,7 +2,7 @@
   "name": "shuffle-recruit",
   "version": "1.0.0",
   "description": "recruitment task for Shuffle",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

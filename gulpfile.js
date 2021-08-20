@@ -14,10 +14,13 @@ gulp.task('styles', () => {
 //     ]);
 // });
 
+
 gulp.task('watch', () => {
     gulp.watch('sass/**/*.scss', (done) => {
         gulp.series(['styles'])(done);
     });
 });
+
+
 
 gulp.task('default', gulp.series(['watch']));
