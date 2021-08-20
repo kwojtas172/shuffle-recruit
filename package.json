@@ -1,0 +1,28 @@
+{
+  "name": "shuffle-recruit",
+  "version": "1.0.0",
+  "description": "recruitment task for Shuffle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwojtas172/shuffle-recruit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwojtas172/shuffle-recruit/issues"
+  },
+  "homepage": "https://github.com/kwojtas172/shuffle-recruit#readme",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.38.0"
+  }
+}
