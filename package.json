@@ -23,6 +23,11 @@
     "gulp-sass": "^5.0.0"
   },
   "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
     "sass": "^1.38.0"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
